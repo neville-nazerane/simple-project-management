@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleProjects.Core.Mapping\SimpleProjects.Core.Mapping.csproj" />
+    <ProjectReference Include="..\SimpleProjects.Core\SimpleProjects.Core.csproj" />
+    <ProjectReference Include="..\SimpleProjects.Services\SimpleProjects.Services.csproj" />
+  </ItemGroup>
+
+</Project>

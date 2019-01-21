@@ -1,0 +1,51 @@
+﻿@model HomeDisplay
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="card-columns">
+    @foreach (var project in Model.Projects)
+    {
+        <div class="card shadow">
+            <div class="card-body">
+                <div class="card-title"><h2>@project.Title</h2></div>
+                @if (project.IsCompleted)
+                {
+                <label class="badge badge-success">complete</label>
+                }
+                <p class="card-text">@project.Description</p>
+                @foreach (var task in project.ProjectTasks)
+                {
+                    <div class="mb-2 p-3 shadow-sm">
+                        <span>@task.Title</span>
+                        <span class="btn-group-sm float-right">
+                            <a class="btn btn-warning btn-sm"
+                               asp-controller="ProjectTasks"
+                               asp-action="Update"
+                               asp-route-id="@task.Id">Edit</a>
+                            <a class="btn btn-danger btn-sm"
+                               asp-controller="ProjectTasks"
+                               asp-action="Update"
+                               asp-route-id="@task.Id">Delete</a>
+                        </span>
+                    </div>
+                }
+            </div>
+            <div class="card-footer btn-group-lg justify-content-center mt-4">
+                <a class="btn btn-success" 
+                   asp-controller="projectTasks" 
+                   asp-action="Add" 
+                   asp-route-projectId="@project.Id">Add Task</a>
+                <a class="btn btn-warning" 
+                   asp-controller="projects" 
+                   asp-action="Update" 
+                   asp-route-id="@project.Id">Edit</a>
+                <a class="btn btn-danger" 
+                   asp-controller="projects" 
+                   asp-action="Delete" 
+                   asp-route-id="@project.Id">Delete</a>
+            </div>
+        </div>
+    }
+</div>
+

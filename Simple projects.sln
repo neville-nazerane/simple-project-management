@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28407.52
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleProjects.Core", "SimpleProjects.Core\SimpleProjects.Core.csproj", "{EE341801-06DF-494F-9078-07C25E2F6285}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleProjects.Core", "SimpleProjects.Core\SimpleProjects.Core.csproj", "{EE341801-06DF-494F-9078-07C25E2F6285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleProjects.Logic", "SimpleProjects.Logic\SimpleProjects.Logic.csproj", "{CE96B3C3-2B06-47E3-B0B0-5E61195DA739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleProjects.Logic", "SimpleProjects.Logic\SimpleProjects.Logic.csproj", "{CE96B3C3-2B06-47E3-B0B0-5E61195DA739}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleProjects.Services", "SimpleProjects.Services\SimpleProjects.Services.csproj", "{D1CD61A2-47A4-4E53-9316-305A4B1D2E7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleProjects.Services", "SimpleProjects.Services\SimpleProjects.Services.csproj", "{D1CD61A2-47A4-4E53-9316-305A4B1D2E7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleProjects.Core.Mapping", "SimpleProjects.Core.Mapping\SimpleProjects.Core.Mapping.csproj", "{0C223D4C-58E9-469A-9D4D-3286589722F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleProjects.Core.Mapping", "SimpleProjects.Core.Mapping\SimpleProjects.Core.Mapping.csproj", "{0C223D4C-58E9-469A-9D4D-3286589722F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleProjects.Data", "SimpleProjects.Data\SimpleProjects.Data.csproj", "{C7C3B62A-678C-43EA-94E2-C3BD4DEAA8CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleProjects.Data", "SimpleProjects.Data\SimpleProjects.Data.csproj", "{C7C3B62A-678C-43EA-94E2-C3BD4DEAA8CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleProjects.Website", "SimpleProjects.Website\SimpleProjects.Website.csproj", "{1EF6B914-D1BA-4615-86F5-CDB92DAABE86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleProjects.Website", "SimpleProjects.Website\SimpleProjects.Website.csproj", "{1EF6B914-D1BA-4615-86F5-CDB92DAABE86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleProjects.Migrations", "SimpleProjects.Migrations\SimpleProjects.Migrations.csproj", "{F863B8E4-09A5-483D-8261-160AC8A7F35E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleProjects.Migrations", "SimpleProjects.Migrations\SimpleProjects.Migrations.csproj", "{F863B8E4-09A5-483D-8261-160AC8A7F35E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleProjects.WebAPI", "SimpleProjects.WebAPI\SimpleProjects.WebAPI.csproj", "{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,18 @@ Global
 		{F863B8E4-09A5-483D-8261-160AC8A7F35E}.Release|x64.Build.0 = Release|Any CPU
 		{F863B8E4-09A5-483D-8261-160AC8A7F35E}.Release|x86.ActiveCfg = Release|Any CPU
 		{F863B8E4-09A5-483D-8261-160AC8A7F35E}.Release|x86.Build.0 = Release|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Debug|x64.Build.0 = Debug|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Debug|x86.Build.0 = Debug|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Release|x64.ActiveCfg = Release|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Release|x64.Build.0 = Release|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Release|x86.ActiveCfg = Release|Any CPU
+		{9F0D7EA8-E7B1-45D5-B118-04198E5489F9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

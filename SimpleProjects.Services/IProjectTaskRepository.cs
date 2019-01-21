@@ -16,7 +16,7 @@ namespace SimpleProjects.Services
         ProjectTask Get(int id);
         ProjectTask GetWithProject(int id);
 
-        IEnumerable<ProjectTask> Get();
+        IEnumerable<ProjectTask> GetByProject(int projectId);
 
         bool Delete(int id);
 

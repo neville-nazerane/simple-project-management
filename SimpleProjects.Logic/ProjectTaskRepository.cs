@@ -49,7 +49,8 @@ namespace SimpleProjects.Logic
 
         public ProjectTask Get(int id) => context.ProjectTasks.AsNoTracking().SingleOrDefault(p => p.Id == id);
 
-        public IEnumerable<ProjectTask> Get() => context.ProjectTasks.AsNoTracking().ToArray();
+        public IEnumerable<ProjectTask> GetByProject(int projectId)
+            => context.ProjectTasks.AsNoTracking().Where(t => t.ProjectId == projectId).ToArray();
 
         public ProjectTaskUpdate GetUpdate(int id) => Get(id).ToUpdate();
 
